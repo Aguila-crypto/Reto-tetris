@@ -9,16 +9,19 @@
     <div class="principal">
         <div class="mi-header">
             <h1> LOGIN </h1>
-            <button type="button"> atras</button>
+            <button type="button" class="atras"> atras</button>
+            <button type="button" class="registrarse"> registrarse </button>
         </div>
         <form action="/enviar" method="POST" name="loginForm" class="formulario">
-            <input type="text" class="userLog" name="userLog">
-            <input type="password" class="userPass" name="userPass">
+            <label for="usLo"> User </label>
+            <input type="text" class="userLog" name="userLog" id="usLo">
+            <label for="paLo"> password </label>
+            <input type="password" class="userPass" name="userPass" id="paLo">
             <button type="submit"> Entra </button>
 
 
         </form>
-        <div calss="mi-footer">
+        <div class="mi-footer">
             <p> zio </p>
             <p> zia </p>
             <p> peppe </p>

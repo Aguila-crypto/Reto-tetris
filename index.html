@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Tetris - DAW 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+
+    <header>
+       <div class="logo-pequeno">
+
+             <a href="index.html">MINI TETRI</a>
+
+         <nav>
+            <button onclick="iniciarSesion()">LOGIN</button>
+
+            <button onclick="registrarse()">REGISTRO</button>
+
+            <select id="idioma" onchange="cambiarIdioma()">
+                <option value="es">ESPAÑOL</option>
+                <option value="en">ENGLISH</option>
+            </select>
+        </nav>      
+            
+    </header>
+
+   <main>
+
+        <section class="inicio">
+
+            <h1>
+                <span>MINI</span>
+                <span>TETRI</span>
+            </h1>
+
+            <div class="bloques">
+
+                <div class="columna">
+                    <div class="pieza verde"></div>
+                    <div class="pieza verde"></div>
+                    <div class="pieza azul"></div>
+                    <div class="pieza azul"></div>
+                    <div class="pieza rosa"></div>
+                    <div class="pieza rosa"></div>
+                </div>
+
+                <div class="columna">
+                    <div class="pieza naranja"></div>
+                    <div class="pieza naranja"></div>
+                    <div class="pieza amarillo"></div>
+                    <div class="pieza amarillo"></div>
+                    <div class="pieza verde"></div>
+                    <div class="pieza verde"></div>
+                </div>
+
+            </div>
+
+            <div class="menu">
+
+                <button class="boton jugar" onclick="jugar()">
+                    ▦ JUGAR AHORA
+                </button>
+
+                <button class="boton" onclick="verPuntuaciones()">
+                    PUNTUACIONES
+                </button>
+
+                <button class="boton" onclick="comoJugar()">
+                    CÓMO JUGAR
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <p>&copy; 2026 - MINI TETRI |  ¡Prepárate para jugar! .</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
